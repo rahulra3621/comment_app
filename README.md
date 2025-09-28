@@ -84,14 +84,19 @@ CommentsApp/
 ├── app.js              # Main application file
 ├── package.json        # Project dependencies and scripts
 ├── public/             # Static assets
-│   └── css/           # Stylesheets
-├── views/             # EJS templates
-│   ├── index.ejs      # Home page
-│   ├── data.ejs       # Comments list
-│   ├── new.ejs        # New comment form
-│   ├── show.ejs       # Individual comment view
-│   └── edit.ejs       # Edit comment form
-└── README.md          # This file
+│   └── css/            # Stylesheets
+|       ├── index.css   # Home Page Styling
+|       ├── data.css    # Comments Page Styling
+|       ├── new.css     # New Comment Form Page Styling
+|       ├── show.css    # Individual Comment Page Styling
+|       └── edit.css    # Edit Comment Page Styling
+├── views/              # EJS templates
+│   ├── index.ejs       # Home page
+│   ├── data.ejs        # Comments list
+│   ├── new.ejs         # New comment form
+│   ├── show.ejs        # Individual comment view
+│   └── edit.ejs        # Edit comment form
+└── README.md           # This file
 ```
 
 ## Development
