@@ -1,0 +1,43 @@
+{
+  "name": "comments-app",
+  "version": "1.0.0",
+  "description": "A simple Express.js web application for managing comments with full CRUD operations",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "comments",
+    "crud",
+    "web-app",
+    "ejs"
+  ],
+  "author": "Rahul Rajput",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahulra3621/CommentsApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rahulra3621/CommentsApp/issues"
+  },
+  "homepage": "https://github.com/rahulra3621/CommentsApp#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "moment-timezone": "^0.6.0",
+    "mongoose": "^8.18.2",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

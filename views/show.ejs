@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+    <link rel="stylesheet" href="/css/show.css">
+</head>
+
+<body>
+    <fieldset>
+        <h3 id="commentid"><strong>Comment Id:</strong>
+            <%=comment.id%>
+        </h3>
+        <h3 id="name"><strong>Name:</strong>
+            <%=comment.username%>
+        </h3>
+        <h3 id="comment"><strong>Comment:</strong>
+            <%=comment.text%>
+        </h3>
+        <h3 id="timestamp"><strong>Created At:</strong>
+            <%=comment.createdAt%>
+        </h3>
+        <% if(comment.updatedAt.getTime() !=comment.createdAt.getTime()) { %>
+            <h3 id="timestamp"><strong>Modified At:</strong>
+                <%=comment.updatedAt%>
+            </h3>
+            <%}%>
+                <a href="/data/edit/<%=comment.id%>" id="edit-btn">Edit Comment</a>
+                <a href="/data/delete/<%=comment.id %>" id="delete-btn">Delete Comment</a>
+    </fieldset>
+</body>
+
+</html>

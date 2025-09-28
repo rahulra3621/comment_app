@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Comments</title>
+    <link rel="stylesheet" href="/css/data.css">
+</head>
+
+<body>
+    
+    <br><br>
+    <div>
+        <h2>Displaying Comments...</h2>
+        <p>These are the cards of the comments.</p>
+        <p>Click the Show Comment Button to see the actual comment.</p>
+    <% if (comments.length===0) { %>
+        <p style="color: red;">No Comments to Show</p>
+    <% } else { %>
+        
+            <% for (const comment of comments) { %>
+            <fieldset>
+                <h3 id="username">
+                    <%= comment.username %>
+                </h3>
+            <a href="/data/show/<%=comment.id %>" id="show-btn">Show Comment</a>
+            <a href="/data/edit/<%=comment.id %>" id="edit-btn">Edit Comment</a>
+            <a href="/data/delete/<%=comment.id %>" id="delete-btn">Delete Comment</a>
+            </fieldset>
+        <% } %>
+        
+    <% } %>
+    <a href="data/new" id="new-btn">Add New Comment</a>
+    </div>  
+</body>
+
+</html>
