@@ -120,7 +120,6 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 ## Future Enhancements
 
-- [ ] Database integration (MongoDB/PostgreSQL)
 - [ ] User authentication
 - [ ] Comment threading/replies
 - [ ] Search functionality
