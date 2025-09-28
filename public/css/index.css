@@ -1,0 +1,34 @@
+body {
+    background-color:darkslateblue;
+    color: white;
+}
+
+.container{
+    display: block;
+    margin: auto;
+    /* align-items: center;
+    justify-content: center; */
+    justify-items: center;
+    margin-top: 100px;
+    width: 500px;
+}
+a {
+    text-decoration: none;
+    color: purple;
+    background-color: aqua;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    transition: all 0.5s ease-in-out;
+}
+a:hover {
+    width: 110px;
+    height: 30px;
+    font-size: large;
+    border-radius: 5px;
+    /* padding-top: 0px; */
+    transition: all 0.5s ease-in-out;
+}
